@@ -1,13 +1,10 @@
-const fs = require('fs')
+// Challenge: Define and use a function in a new file
 
-// fs.writeFileSync('notes.txt', 'My name is Ashley.')
-//first argument is the name of file, second argument will overwrite what will be in the file
+// 1. Create a new file called notes.js
+// 2. Create getNotes function that returns "Your notes..."
+// 3. Export getNotes function
+// 4. From app.js, load in and call the function printing message to console 
 
-//
-//Challenge: Append a message to notes.txt
-//
-// 1. Use appendfileSync to append to the file
-// 2. Run the script
-// 3. Check your work by opening the file and viewing the append text
+const notes = require('./notes.js')
 
-fs.appendFileSync('notes.txt', 'I\'m from NYC')
+console.log(notes())
